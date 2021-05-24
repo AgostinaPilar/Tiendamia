@@ -3,19 +3,19 @@ Utilizando SQL generar las sentencias para resolver los tres puntos que se detal
 continuación.
 Tabla 1: Empleados (ID, NombreApellido, Telefono, CUIT, EstadoCivil, IdSector)
 Tabla 2: Sector (IdSector, NombreSector, DireccionSector)
-
+-------------------------------------------------------------------------------------------------------
 1) Seleccionar todos los empleados que trabajen en el sector 1
 
 select *
 from Empleados
 where idSector = '1'
-
+-------------------------------------------------------------------------------------------------------
 2) Actualizar el estado civil a "casado" del empleado de ID 25
 
 update Empleados 
 set EstadoCivil = 'casado'
 where id = '25'
-
+-------------------------------------------------------------------------------------------------------
 3) Generar una tabla donde vea ID, NombreApellido, DireccionSector
 
 select e.id, e.NombreApellido, s.DireccionSector
